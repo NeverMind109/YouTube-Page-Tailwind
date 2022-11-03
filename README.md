@@ -1,1 +1,1 @@
-#YouTube Main Page with Tailwind CSS
+#YouTube Main and Channel Pages with Tailwind CSS

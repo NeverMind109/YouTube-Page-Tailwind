@@ -11,6 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./icons/favicon-16x16.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="./icons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" href="./icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" href="./icons/favicon-144x144.png" sizes="144x144" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <style type="text/tailwindcss">
       @layer utilities {
@@ -29,13 +38,22 @@
           border: 4px solid transparent;
           background-color: hsl(0, 0%, 67%);
         }
-        .categories::-webkit-scrollbar {
+        .categories::-webkit-scrollbar,
+        .tabs::-webkit-scrollbar,
+        .playlist::-webkit-scrollbar,
+        .featured-channels::-webkit-scrollbar {
           height: 5px;
         }
-        .categories::-webkit-scrollbar-track {
+        .categories::-webkit-scrollbar-track,
+        .tabs::-webkit-scrollbar-track,
+        .playlist::-webkit-scrollbar-track,
+        .featured-channels::-webkit-scrollbar-track {
           background: white;
         }
-        .categories::-webkit-scrollbar-thumb {
+        .categories::-webkit-scrollbar-thumb,
+        .tabs::-webkit-scrollbar-thumb,
+        .playlist::-webkit-scrollbar-thumb,
+        .featured-channels::-webkit-scrollbar-thumb {
           background-color: hsl(0, 0%, 67%);
           border-radius: 8px;
         }
@@ -50,7 +68,8 @@
             md: "768px",
             lg: "1024px",
             xl: "1280px",
-            "2xl": "1921px",
+            "2xl": "1700px",
+            big: "1921px",
           },
           fontFamily: {
             sans: ["Roboto", "ui-sans-serif", "system-ui"],
@@ -62,13 +81,32 @@
             middle: "0.93rem",
             base: "1rem",
             xl: "1.25rem",
+            "2xl": "1.5rem",
+          },
+          minWidth: {
+            full: "100%",
+            "1/2": "50%",
+            "1/3": "33%",
+            "1/4": "25%",
+            "1/5": "20%",
+            min: "min-content",
           },
           extend: {
             boxShadow: {
               "custom-shadow": "0 4px 32px 4px rgba(0, 0, 0, 0.1)",
             },
-            spacing: {
+            inset: {
               "custom-right-335": "-335%",
+            },
+            colors: {
+              "dark-btn": "#212121",
+              "red-btn": "#f00",
+            },
+            translate: {
+              "custom-correct": "-50%",
+            },
+            spacing: {
+              68: "17rem",
             },
           },
         },
@@ -1917,7 +1955,7 @@
         </div>
       </div>
     </section>
-    <main class="pt-32 px-5 pb-5 md:pr-6 md:ml-24 lg:px-10 xl:px-20 xl:ml-64">
+    <main class="pt-32 px-5 pb-5 md:ml-24 lg:px-10 xl:px-20 xl:ml-64">
       <div
         class="grid gap-4 max-w-screen-2xl m-auto sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
       >
