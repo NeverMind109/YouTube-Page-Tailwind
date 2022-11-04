@@ -41,19 +41,22 @@
         .categories::-webkit-scrollbar,
         .tabs::-webkit-scrollbar,
         .playlist::-webkit-scrollbar,
-        .featured-channels::-webkit-scrollbar {
+        .featured-channels::-webkit-scrollbar,
+        .shorts::-webkit-scrollbar {
           height: 5px;
         }
         .categories::-webkit-scrollbar-track,
         .tabs::-webkit-scrollbar-track,
         .playlist::-webkit-scrollbar-track,
-        .featured-channels::-webkit-scrollbar-track {
+        .featured-channels::-webkit-scrollbar-track,
+        .shorts::-webkit-scrollbar-track {
           background: white;
         }
         .categories::-webkit-scrollbar-thumb,
         .tabs::-webkit-scrollbar-thumb,
         .playlist::-webkit-scrollbar-thumb,
-        .featured-channels::-webkit-scrollbar-thumb {
+        .featured-channels::-webkit-scrollbar-thumb,
+        .shorts::-webkit-scrollbar-thumb {
           background-color: hsl(0, 0%, 67%);
           border-radius: 8px;
         }
@@ -89,6 +92,11 @@
             "1/3": "33%",
             "1/4": "25%",
             "1/5": "20%",
+            "1/6": "16%",
+            "1/7": "14%",
+            "1/9": "11%",
+            "1/12": "8%",
+            0: "0",
             min: "min-content",
           },
           extend: {
@@ -113,7 +121,7 @@
       };
     </script>
   </head>
-  <body class="font-sans box-border m-0">
+  <body class="font-sans box-border">
     <header
       class="fixed z-30 w-full flex justify-between bg-white space-x-1 p-2 xsm:px-5 sm:py-3 sm:space-x-2"
     >
